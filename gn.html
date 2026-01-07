@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Selamat Tidur Sayang</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            font-family: 'Segoe Script', cursive;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 50px 40px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        h1 {
+            color: #fff;
+            font-size: 36px;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+        }
+
+        p {
+            color: #fff;
+            font-size: 20px;
+            line-height: 1.6;
+        }
+
+        .heart {
+            position: absolute;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 20px;
+            animation: float 6s infinite ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.9); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(100vh) scale(0.5);
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-10vh) scale(1.2);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1>Selamat Malam Aviaku Sayang 🌙</h1>
+        <p>
+            Semoga tidurmu nyenyak malam ini,<br>
+            mimpi indah menemanimu,<br>
+            dan besok kamu bangun dengan senyum terindahmu.<br><br>
+            Aku selalu menyayangimu 🤍
+        </p>
+    </div>
+
+    <!-- Hiasan hati -->
+    <span class="heart" style="left: 10%;">❤️</span>
+    <span class="heart" style="left: 30%; animation-delay: 1s;">💖</span>
+    <span class="heart" style="left: 50%; animation-delay: 2s;">💕</span>
+    <span class="heart" style="left: 70%; animation-delay: 3s;">💗</span>
+    <span class="heart" style="left: 90%; animation-delay: 4s;">❤️</span>
+
+</body>
+</html>
